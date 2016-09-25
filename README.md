@@ -6,3 +6,5 @@ vi command mode
 :set nonumber #Toggle Line number
 
 :set guifont=Ubuntu\ Mono #Set your fonts
+
+db2commands
