@@ -7,4 +7,4 @@ vi command mode
 
 :set guifont=Ubuntu\ Mono #Set your fonts
 
-db2commands
+:syntax on #Set Syntax highlighting on
