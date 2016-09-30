@@ -8,3 +8,5 @@ vi command mode
 :set guifont=Ubuntu\ Mono #Set your fonts
 
 :syntax on #Set Syntax highlighting on
+
+:colorscheme darkblue #Set Colorscheme
