@@ -16,6 +16,12 @@ vi command mode
 
 :cal cursor(1,25)
 
+Esc + G # End Of line
+
+gg # First Line
+
+123G # Go To Line
+
 # Git Commands
 
 # Remove the offending ssh key
