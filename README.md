@@ -1,6 +1,7 @@
 # commands
 
 vi command mode
+
 :set number  #Set Line number
 
 :set nonumber #Toggle Line number
@@ -10,6 +11,10 @@ vi command mode
 :syntax on #Set Syntax highlighting on
 
 :colorscheme darkblue #Set Colorscheme
+
+:set ruler # Displays column number
+
+:cal cursor(1,25)
 
 # Git Commands
 
