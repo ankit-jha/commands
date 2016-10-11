@@ -10,3 +10,11 @@ vi command mode
 :syntax on #Set Syntax highlighting on
 
 :colorscheme darkblue #Set Colorscheme
+
+# Git Commands
+
+# Remove the offending ssh key
+
+sed -i '6d' ~/.ssh/known_hosts
+
+http://bit.ly/2e6h7g5
