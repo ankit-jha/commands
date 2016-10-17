@@ -22,6 +22,10 @@ gg # First Line
 
 123G # Go To Line
 
+u # Undo
+
+Ctrl + R # Redo
+
 # Git Commands
 
 # Remove the offending ssh key
