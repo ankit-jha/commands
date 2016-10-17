@@ -28,8 +28,8 @@ Ctrl + R # Redo
 
 # Git Commands
 
-# Remove the offending ssh key [http://bit.ly/2e6h7g5]
+# [Remove the offending ssh key](http://bit.ly/2e6h7g5)
 
 sed -i '6d' ~/.ssh/known_hosts
 
-http://bit.ly/2e6h7g5
+
