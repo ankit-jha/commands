@@ -1,6 +1,6 @@
 {
   "name": "Commands",
   "tagline": "",
-  "body": "# commands\r\n\r\nvi command mode\r\n\r\n:set number  #Set Line number\r\n\r\n:set nonumber #Toggle Line number\r\n\r\n:set guifont=Ubuntu\\ Mono #Set your fonts\r\n\r\n:syntax on #Set Syntax highlighting on\r\n\r\n:colorscheme darkblue #Set Colorscheme\r\n\r\n:set ruler # Displays column number\r\n\r\n:cal cursor(1,25)\r\n\r\n# Git Commands\r\n\r\n# Remove the offending ssh key\r\n\r\nsed -i '6d' ~/.ssh/known_hosts\r\n\r\nhttp://bit.ly/2e6h7g5\r\n",
+  "body": "# commands\r\n\r\nvi command mode\r\n\r\n:set number  #Set Line number\r\n\r\n:set nonumber #Toggle Line number\r\n\r\n:set guifont=Ubuntu\\ Mono #Set your fonts\r\n\r\n:syntax on #Set Syntax highlighting on\r\n\r\n:colorscheme darkblue #Set Colorscheme\r\n\r\n:set ruler # Displays column number\r\n\r\n:cal cursor(1,25)\r\n\r\nEsc + G # End Of line\r\n\r\ngg # First Line\r\n\r\n123G # Go To Line\r\n\r\nu # Undo\r\n\r\nCtrl + R # Redo\r\n\r\nCtrl-W, Up Arrow # Move between split windows\r\n\r\n# Git Commands\r\n\r\n# [Remove the offending ssh key](http://bit.ly/2e6h7g5)\r\n\r\nsed -i '6d' ~/.ssh/known_hosts\r\n\r\n\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
