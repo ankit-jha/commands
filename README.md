@@ -26,6 +26,8 @@ u # Undo
 
 Ctrl + R # Redo
 
+Ctrl-W, Up Arrow # Move between split windows
+
 # Git Commands
 
 # [Remove the offending ssh key](http://bit.ly/2e6h7g5)
