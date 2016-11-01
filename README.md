@@ -16,11 +16,13 @@ vi command mode
 
 :cal cursor(1,25)
 
-Esc + G # End Of line
+G # End Of line
 
 gg # First Line
 
 123G # Go To Line
+
+ggVG #Select All
 
 u # Undo
 
@@ -35,6 +37,25 @@ Ctrl-W, Up Arrow # Move between split windows
 n              - repeat forward search
 N              - repeat backward
 *              - search for word currently under cursor
+
+
+
+#Copy To Clipboard
+
+You should yank the text to the * or + registers:
+
+gg "*y G
+
+Explanation:
+
+    gg
+        gets the cursor to the first character of the file
+    "*y
+        Starts a yank command to the register * from the first line, until...
+    G
+        go the end of the file
+
+
 
 # Git Commands
 
