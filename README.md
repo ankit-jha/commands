@@ -33,10 +33,15 @@ Ctrl-W, Up Arrow # Move between split windows
 #For basic searching:
 
 /pattern       - search forward for pattern
+
 ?pattern       - search backward
+
 n              - repeat forward search
+
 N              - repeat backward
+
 *              - search for word currently under cursor
+
 
 
 
