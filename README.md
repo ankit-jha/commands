@@ -80,8 +80,20 @@ Explanation:
 
 sed -i '6d' ~/.ssh/known_hosts
 
-git config user.name
+git config --global user.name "My name is..."
 
-git config user.email
+git config --global user.email my_email@domain.com
+
+git config user.name "My name for this project is..." on your local project folder.
+
+git config user.name my_email@domain.com on your local project folder.
+
+For editing
+
+git config --global -e
+
+git config -e (to edit local config)
+
+git config -l
 
 
