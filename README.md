@@ -80,4 +80,8 @@ Explanation:
 
 sed -i '6d' ~/.ssh/known_hosts
 
+git config user.name
+
+git config user.email
+
 
