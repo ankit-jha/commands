@@ -40,7 +40,7 @@ n              - repeat forward search
 
 N              - repeat backward
 
-*              - search for word currently under cursor
+/*              - search for word currently under cursor
 
 
 
@@ -72,7 +72,11 @@ Explanation:
     y to yank those lines
     + to copy to the system clipboard
 
+$ moves to the last character on the line.
 
+g $ goes to the end of the screen line (when a buffer line is wrapped across multiple screen lines)
+
+A to move to the end of the line and switch to editing mode (Append)
 
 # Git Commands
 
