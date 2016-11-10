@@ -24,7 +24,7 @@ gg # First Line
 
 $ moves to the last character on the line.
 
-g $ goes to the end of the screen line (when a buffer line is wrapped across multiple screen lines)
+g$ goes to the end of the screen line (when a buffer line is wrapped across multiple screen lines)
 
 A to move to the end of the line and switch to editing mode (Append)
 
@@ -83,11 +83,15 @@ Explanation:
 #Diff between two files
 
 :vs otherfile (open otherfile in vertical split screen)
+
 :diffthis (turn on diff mode in original file)
+
 Ctrl+w l/h  (swap to newly opened file)
+
 :diffthis (turn on diff mode in opened file)
 
 Turn off diff
+
 :diffoff in each pane
 
 # Git Commands
