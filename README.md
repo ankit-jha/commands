@@ -94,6 +94,10 @@ Turn off diff
 
 :diffoff in each pane
 
+:diffget to merge 
+
+:63diffget
+
 # Git Commands
 
 # [Remove the offending ssh key](http://bit.ly/2e6h7g5)
