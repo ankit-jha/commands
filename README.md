@@ -120,4 +120,14 @@ git config -e (to edit local config)
 
 git config -l
 
+git branch #Shows what branch you are on 
+
+git checkout -b dev_new # Creates a new branch
+
+#Not clear
+git push -u origin dev_new 
+
+git push --set-upstream origin dev_ankit
+
+
 
