@@ -124,6 +124,10 @@ git branch #Shows what branch you are on
 
 git checkout -b dev_new # Creates a new branch
 
+git remote rename origin new_origin
+
+git remote add upstream url
+
 #Not clear
 git push -u origin dev_new 
 
