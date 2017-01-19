@@ -128,6 +128,8 @@ git remote rename origin new_origin
 
 git remote add upstream url
 
+git log --follow filename # Shows commit only for that specific file
+
 #Not clear
 git push -u origin dev_new 
 
