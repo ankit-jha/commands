@@ -51,7 +51,16 @@ N              - repeat backward
 /*              - search for word currently under cursor
 
 
+#Search and Replace:
 
+:[range]s/search/replace/
+e.g.
+
+Search entire file and replace all occurences
+:%s/search/replace/g
+
+Search from line 8 to 10 file and replace all occurences
+:8,10 s/search/replace/g 
 
 #Copy To Clipboard
 
