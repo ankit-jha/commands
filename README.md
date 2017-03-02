@@ -30,6 +30,8 @@ g$ goes to the end of the screen line (when a buffer line is wrapped across mult
 
 A to move to the end of the line and switch to editing mode (Append)
 
+q: To access command history
+
 ggVG #Select All
 
 u # Undo
@@ -49,6 +51,10 @@ n              - repeat forward search
 N              - repeat backward
 
 /*              - search for word currently under cursor
+
+Ctrl + R + +    -  Ctrl R plus register to copy and search
+
+q/              - To access search history 
 
 
 #Search and Replace:
