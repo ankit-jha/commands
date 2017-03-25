@@ -153,4 +153,16 @@ git push -u origin dev_new
 git push --set-upstream origin dev_ankit
 
 
+# Homebrew Commands
 
+ruby -e "$(curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install)" # Installs HomeBrew
+
+brew cask  # Installs Cask if it's not there otherwise shows all commands
+
+brew cask install app-name
+
+brew cask uninstall app-name
+
+brew cask search app-name
+
+brew cask cleanup
