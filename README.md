@@ -1,4 +1,4 @@
-# VI Commands
+# Vi Commands
 
 vi command mode
 
@@ -95,7 +95,13 @@ Explanation:
     y to yank those lines
     + to copy to the system clipboard
 
+Inserts text from a specified file into the current buffer
 
+:r textfile
+
+You can also read in the output of shell applications
+
+:r ! ls -1 /home/user/directory
 
 #Diff between two files
 
