@@ -14,6 +14,8 @@ vi command mode
 
 :set ruler # Displays column number
 
+:set backspace=indent,eol,start #Ensures normal backspace key usage
+
 :cal cursor(1,25)
 
 G # End Of line
