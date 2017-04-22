@@ -123,6 +123,8 @@ Turn off diff
 
 :63diffget
 
+:Explore #Windows explorer for vim
+
 # Git Commands
 
 # [Remove the offending ssh key](http://bit.ly/2e6h7g5)
