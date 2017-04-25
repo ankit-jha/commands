@@ -125,6 +125,8 @@ Turn off diff
 
 :Explore #Windows explorer for vim
 
+:e scp://username@host.com/path/to/file  #Remote editing of files
+
 # Git Commands
 
 # [Remove the offending ssh key](http://bit.ly/2e6h7g5)
