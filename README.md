@@ -2,27 +2,27 @@
 
 vi command mode
 
-:set number  #Set Line number
+    :set number  #Set Line number
 
-:set nonumber #Toggle Line number
+    :set nonumber #Toggle Line number
 
-:set guifont=Ubuntu\ Mono #Set your fonts
+    :set guifont=Ubuntu\ Mono #Set your fonts
 
-:syntax on #Set Syntax highlighting on
+    :syntax on #Set Syntax highlighting on
 
-:colorscheme darkblue #Set Colorscheme
+    :colorscheme darkblue #Set Colorscheme
 
-:set ruler # Displays column number
+    :set ruler # Displays column number
 
-:set backspace=indent,eol,start #Ensures normal backspace key usage
+    :set backspace=indent,eol,start #Ensures normal backspace key usage
 
-:cal cursor(1,25)
+    :cal cursor(1,25)
 
-G # End Of line
+    G # End Of line
 
-gg # First Line
+    gg # First Line
 
-123G # Go To Line
+    123G # Go To Line
 
 $ moves to the last character on the line.
 
@@ -44,37 +44,39 @@ Ctrl-W, Up Arrow # Move between split windows
 
 #For basic searching:
 
-/pattern       - search forward for pattern
+    /pattern       - search forward for pattern
 
-?pattern       - search backward
+    ?pattern       - search backward
 
-n              - repeat forward search
+    n              - repeat forward search
 
-N              - repeat backward
+    N              - repeat backward
 
-/*              - search for word currently under cursor
+    /*              - search for word currently under cursor
 
-Ctrl + R + +    -  Ctrl R plus register to copy and search
+    Ctrl + R + +    -  Ctrl R plus register to copy and search
 
-q/              - To access search history 
+    q/              - To access search history 
 
 
 #Search and Replace:
 
-:[range]s/search/replace/
+    :[range]s/search/replace/
 e.g.
 
 Search entire file and replace all occurences
-:%s/search/replace/g
+    
+    :%s/search/replace/g
 
 Search from line 8 to 10 file and replace all occurences
-:8,10 s/search/replace/g 
+
+    :8,10 s/search/replace/g 
 
 #Copy To Clipboard
 
 You should yank the text to the * or + registers:
 
-gg "*y G
+    gg "*y G
 
 Explanation:
 
@@ -87,7 +89,7 @@ Explanation:
 
 Use:
 
-:%y+
+    :%y+
 
 to yank all lines.
 
@@ -97,35 +99,47 @@ Explanation:
     y to yank those lines
     + to copy to the system clipboard
 
+#Redirection
+
+    :redir @+
+    :history
+    :g/fred/
+    " any other commands
+    :redir END
+
 Inserts text from a specified file into the current buffer
 
-:r textfile
+    :r textfile
 
 You can also read in the output of shell applications
 
-:r ! ls -1 /home/user/directory
+    :r ! ls -1 /home/user/directory
 
 #Diff between two files
 
-:vs otherfile (open otherfile in vertical split screen)
+    :vs otherfile (open otherfile in vertical split screen)
 
-:diffthis (turn on diff mode in original file)
+    :diffthis (turn on diff mode in original file)
 
-Ctrl+w l/h  (swap to newly opened file)
+    Ctrl+w l/h  (swap to newly opened file)
 
-:diffthis (turn on diff mode in opened file)
+    :diffthis (turn on diff mode in opened file)
 
 Turn off diff
 
-:diffoff in each pane
+    :diffoff in each pane
 
-:diffget to merge 
+    :diffget to merge 
 
-:63diffget
+    :63diffget
 
-:Explore #Windows explorer for vim
+#Windows explorer for vim
+    
+    :Explore 
 
-:e scp://username@host.com/path/to/file  #Remote editing of files
+#Remote editing of files
+
+    :e scp://username@host.com/path/to/file  
 
 # Git Commands
 
