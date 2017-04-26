@@ -106,6 +106,10 @@ Explanation:
     :g/fred/
     " any other commands
     :redir END
+ 
+#Set Paging
+
+    :set more
 
 Inserts text from a specified file into the current buffer
 
