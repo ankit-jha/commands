@@ -54,11 +54,11 @@ vi commands
 
     N              - repeat backward
 
-    /*              - search for word currently under cursor
+    *              - search for word currently under cursor
 
-    Ctrl + R + +    -  Ctrl R plus register to copy and search
+    Ctrl + R + +   -  Ctrl R plus register to copy and search
 
-    q/              - To access search history 
+    q/             - To access search history 
 
 
 #Search and Replace:
