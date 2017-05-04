@@ -1,6 +1,6 @@
 # Vi Commands
 
-vi command mode
+vimrc settings
 
     :set number  #Set Line number
 
@@ -18,29 +18,31 @@ vi command mode
 
     :cal cursor(1,25)
 
+vi commands
+
     G # End Of line
 
     gg # First Line
 
     123G # Go To Line
 
-$ moves to the last character on the line.
+    $ moves to the last character on the line.
 
-0 moves to the start of the line.
+    0 moves to the start of the line.
 
-g$ goes to the end of the screen line (when a buffer line is wrapped across multiple screen lines)
+    g$ goes to the end of the screen line (when a buffer line is wrapped across multiple screen lines)
 
-A to move to the end of the line and switch to editing mode (Append)
+    A to move to the end of the line and switch to editing mode (Append)
 
-q: To access command history
+    q: To access command history
 
-ggVG #Select All
+    ggVG #Select All
 
-u # Undo
+    u # Undo
 
-Ctrl + R # Redo
+    Ctrl + R # Redo
 
-Ctrl-W, Up Arrow # Move between split windows
+    Ctrl-W, Up Arrow # Move between split windows
 
 #For basic searching:
 
@@ -71,6 +73,12 @@ Search entire file and replace all occurences
 Search from line 8 to 10 file and replace all occurences
 
     :8,10 s/search/replace/g 
+
+#Search And List All Occurences (The grep tool was named after this command sequence)
+
+    :g/pattern/p
+    
+    :global/pattern/print
 
 #Copy To Clipboard
 
