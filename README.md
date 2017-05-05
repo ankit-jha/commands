@@ -155,10 +155,6 @@ Turn off diff
 
 # Git Commands
 
-# [Remove the offending ssh key](http://bit.ly/2e6h7g5)
-
-sed -i '6d' ~/.ssh/known_hosts
-
 git config --global user.name "My name is..."
 
 git config --global user.email my_email@domain.com
