@@ -151,7 +151,14 @@ Turn off diff
 
 #Remote editing of files
 
-    :e scp://username@host.com/path/to/file  
+    :e scp://username@host.com/path/to/file
+    
+#Diff and Merging
+
+    ]c – Jump to the next difference
+    [c – Jump to the previous difference
+    do – Copy the current difference’s text from the file on the right to the file on the left
+    dp – Copy the current difference’s text from the file on the left to the file on the right.
 
 # Git Commands
 
