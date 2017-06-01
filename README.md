@@ -1,20 +1,22 @@
 # Vi Commands
 
 vimrc settings
+    
+    :set number  "Display line number
 
-    :set number  #Set Line number
+    :set guifont=Ubuntu\ Mono:h16 "Set your font and font-size
 
-    :set nonumber #Toggle Line number
+    :syntax on "Set cyntax highlighting on
 
-    :set guifont=Ubuntu\ Mono #Set your fonts
+    :colorscheme desert "Set colorscheme
 
-    :syntax on #Set Syntax highlighting on
+    :set hlsearch "Set highlight search on
 
-    :colorscheme darkblue #Set Colorscheme
+    :set ruler "Displays column number
 
-    :set ruler # Displays column number
+    :set backspace=indent,eol,start "Ensures normal backspace key usage
 
-    :set backspace=indent,eol,start #Ensures normal backspace key usage
+    command! FormatJson %!python -m json.tool "Json formatting via python
 
 vi commands
 
