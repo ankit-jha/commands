@@ -16,8 +16,6 @@ vimrc settings
 
     :set backspace=indent,eol,start #Ensures normal backspace key usage
 
-    :cal cursor(1,25)
-
 vi commands
 
     G # End Of line
@@ -43,6 +41,8 @@ vi commands
     Ctrl + R # Redo
 
     Ctrl-W, Up Arrow # Move between split windows
+    
+    :cal cursor(1,25) "Moves the cursor to given row and column
 
 #For basic searching:
 
