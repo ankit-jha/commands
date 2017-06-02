@@ -44,7 +44,16 @@ vi commands
 
     Ctrl-W, Up Arrow # Move between split windows
     
-    :cal cursor(1,25) "Moves the cursor to given row and column
+    :cal cursor(1,25) #Moves the cursor to given row and column
+    
+    :%d  #Delete All lines
+
+    where
+
+    : tells vi to go in command mode
+    % means all the line
+    d : delete
+
 
 #For basic searching:
 
