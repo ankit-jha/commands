@@ -54,6 +54,14 @@ vi commands
     % means all the line
     d : delete
 
+#For switching tabs in vim terminal
+
+    Next tab: g t
+
+    Prior tab: g T
+
+    Numbered tab: nnn g t
+
 
 #For basic searching:
 
