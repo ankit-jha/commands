@@ -17,6 +17,15 @@ vimrc settings
     :set backspace=indent,eol,start "Ensures normal backspace key usage
 
     command! FormatJson %!python -m json.tool "Json formatting via python
+    
+    "Mapping very magic mode to /
+    nnoremap / /\v
+ 
+    :set ignorecase "No case matching
+    
+    :set smartcase "Only case sensitive when encounters uppercase
+    
+    :set incsearch "Search as you type
 
 vi commands
 
