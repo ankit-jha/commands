@@ -63,6 +63,12 @@ vi commands
     % means all the line
     d : delete
 
+#Repeat last change
+
+    The "." command repeats the last change made in normal mode. For example, if you press dw to delete a word, you can then press . to     delete another word (. is dot, aka period or full stop).
+
+    The "@:" command repeats the last command-line change (a command invoked with ":", for example :s/old/new/). 
+
 #For switching tabs in vim terminal
 
     Next tab: g t
