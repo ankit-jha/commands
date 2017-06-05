@@ -194,6 +194,13 @@ Turn off diff
     do – Copy the current difference’s text from the file on the right to the file on the left
     dp – Copy the current difference’s text from the file on the left to the file on the right.
 
+Unix uses 0xA for a newline character. Windows uses a combination of two characters: 0xD 0xA. 0xD is the carriage return character. ^M happens to be the way vim displays 0xD.
+You c an remove all the ^M characters by running the following:
+     
+     :%s/^M//g
+
+Where ^M is entered by holding down Ctrl and typing v followed by m, and then releasing Ctrl
+
 # Git Commands
 
 git config --global user.name "My name is..."
