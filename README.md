@@ -77,6 +77,10 @@ vi commands
 
     Numbered tab: nnn g t
 
+#For Accessing clipboard
+
+    <Ctrl>*
+    In Windows, + and * are equivalent. In unix there is a subtle difference between + and *
 
 #For basic searching:
 
