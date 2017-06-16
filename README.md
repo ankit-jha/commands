@@ -205,6 +205,16 @@ You c an remove all the ^M characters by running the following:
 
 Where ^M is entered by holding down Ctrl and typing v followed by m, and then releasing Ctrl
 
+#Commenting Block Of Text
+
+    First, go to the first line you want to comment, 
+    press CtrlV. This will put the editor in the VISUAL BLOCK mode.
+    Then using the arrow key and select until the last line
+    Now press ShiftI, which will put the editor in INSERT mode and then press #. 
+    This will add a hash to the first line.
+    Then press Esc (give it a second), and it will insert a # character on all other selected lines.
+
+
 # Git Commands
 
 git config --global user.name "My name is..."
