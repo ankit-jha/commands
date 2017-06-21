@@ -245,9 +245,7 @@ git log --follow filename # Shows commit only for that specific file
 
 git branch --set-upstream-to origin dev_ankit #Creates tracking between remote dev_ankit branch and local dev_ankit branch
 
-#Not clear
-git push -u origin dev_new 
-
+git push -u origin dev_new  #The first time that you push dev_new branch it sets up the association between your branch and the one at origin.
 
 
 
