@@ -243,7 +243,7 @@ git remote add upstream url
 
 git log --follow filename # Shows commit only for that specific file
 
-git branch --set-upstream origin dev_ankit #Creates tracking between remote dev_ankit and local dev_ankit branch
+git branch --set-upstream-to origin dev_ankit #Creates tracking between remote dev_ankit branch and local dev_ankit branch
 
 #Not clear
 git push -u origin dev_new 
