@@ -216,6 +216,12 @@ Where ^M is entered by holding down Ctrl and typing v followed by m, and then re
 
 Please note uppercase I.
 
+#Delete a Block Of Text use visual line mode:
+
+    Put your cursor on the top line of the block of text/code to remove.
+    Press V (That's capital "V" : Shift + v )
+    Move your cursor down to the bottom of the block of text/code to remove.
+    Press d.
 
 # Git Commands
 
