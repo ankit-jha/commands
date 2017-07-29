@@ -34,6 +34,10 @@ vi commands
     gg # First Line
 
     123G # Go To Line
+    
+    H #Top of the screen
+    
+    L #Bottom of the screen
 
     $ moves to the last character on the line.
 
