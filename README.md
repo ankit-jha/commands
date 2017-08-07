@@ -259,7 +259,7 @@ git branch --set-upstream-to origin dev_ankit #Creates tracking between remote d
 
 git push -u origin dev_new  #The first time that you push dev_new branch it sets up the association between your branch and the one at origin.
 
-
+git --no-ff #The --no-ff flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature
 
 # Homebrew Commands
 
