@@ -47,3 +47,5 @@ echo "Cleaning up..."
 brew cask cleanup
 
 echo "Apps installation complete"
+export PS1="\[\e[32;1m\]\u@\[\e[32;1m\]\h: \[\e[34;1m\]\W\a \[\e[0m\]\$"
+echo "Prompt Update"
