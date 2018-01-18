@@ -16,6 +16,7 @@ brew install caskroom/cask/brew-cask
 
 CASKS=(
 appcleaner
+anaconda
 boom
 caffeine
 calibre
