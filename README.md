@@ -1,6 +1,6 @@
 # Vi Commands
 
- vimrc settings
+vimrc settings
     
     :set number  "Display line number
 
