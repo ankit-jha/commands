@@ -30,6 +30,7 @@ skype
 skypewebplugin
 spotify
 torbrowser
+#tree
 vagrant
 virtualbox
 vlc
