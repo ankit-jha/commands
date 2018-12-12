@@ -6,7 +6,7 @@ vimrc settings
 
     :set guifont=Ubuntu\ Mono:h16 "Set your font and font-size
 
-    :syntax on "Set cyntax highlighting on
+    :syntax on "Set syntax highlighting on
 
     :colorscheme desert "Set colorscheme
 
