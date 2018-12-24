@@ -1,6 +1,6 @@
 # Vi Commands
 
-vimrc settings
+## vimrc settings
     
     :set number  "Display line number
 
@@ -27,9 +27,11 @@ vimrc settings
     
     :set incsearch "Search as you type
 
-vi commands
+## vi commands
 
-    G # End Of line
+    G # Go to Last line
+
+    A # Move to the end of the line and switch to editing mode (Append)
 
     gg # First Line
 
@@ -45,8 +47,6 @@ vi commands
 
     g$ goes to the end of the screen line (when a buffer line is wrapped across multiple screen lines)
 
-    A to move to the end of the line and switch to editing mode (Append)
-
     q: To access command history
 
     ggVG #Select All
@@ -60,6 +60,8 @@ vi commands
     :cal cursor(1,25) #Moves the cursor to given row and column
     
     :%d  #Delete All lines
+    
+    :%j  #Join all the lines  
 
     where
 
@@ -73,8 +75,10 @@ vi commands
 
     The "@:" command repeats the last command-line change (a command invoked with ":", for example :s/old/new/). 
 
-#For switching tabs in vim terminal
-
+#For opening and switching tabs in vim terminal
+    
+    Open tab: tabnew
+    
     Next tab: g t
 
     Prior tab: g T
@@ -106,11 +110,8 @@ vi commands
 #Search and Replace:
 
     :[range]s/search/replace/
-e.g.
-
-Search entire file and replace all occurences
-    
-    :%s/search/replace/g
+    e.g.
+    :%s/search/replace/g #Search entire file and replace all occurences
 
 Search from line 8 to 10 file and replace all occurences
 
@@ -121,6 +122,41 @@ Search from line 8 to 10 file and replace all occurences
     :g/pattern/p
     
     :global/pattern/print
+
+#Copy & The Paste Line Below or Above The Cursor
+
+    yy p/P
+
+Explanation:
+
+    yy
+        Yank (Copy) the line
+    p
+        Paste the line below
+    P
+        Paste the line above
+
+#Open multiple files from command line
+
+    vim -o a b c Starts vim with several files in a splitted window
+
+    vim -O a b c Starts vim with several files in a horizontal window
+
+    vim -p a b c Starts vim with several files in a tabs
+
+#Copy & The Paste Multiple Lines Below/Above The Cursor
+
+    Shift + v + J/K + p/P
+
+Explanation:
+
+    Shift + v
+        Enter Visual Line Mode
+    J/K
+        Select line by moving up (J) or down (K)
+    p/P
+        Paste the lines below (p) or above (P) the cursor
+
 
 #Copy To Clipboard
 
@@ -137,11 +173,9 @@ Explanation:
     G
         go the end of the file
 
-Use:
+Use below command to yank all lines.
 
     :%y+
-
-to yank all lines.
 
 Explanation:
 
@@ -191,9 +225,21 @@ Turn off diff
     
     :Explore 
 
-#Remote editing of files
+## Remote editing of files
 
+###  Opening file outside the vim editor
+    $vim scp://user@server.com/filepath
+    e.g. $vim scp://jarvis@remote-server.com//tmp/message.txt
+
+###  Opening file inside the vim editor
     :e scp://username@host.com/path/to/file
+    e.g. scp://jarvis@remote-server.com//tmp/message.txt
+    :Nread scp://jarvis@localhost//tmp/message.txt # Using net read
+    
+###  Saving the file
+    :set bt=acwrite # Setting buffer type to write
+    :w # Save the file
+    :Nwrite scp://jarvis@localhost//tmp/message.txt # Using net write    
     
 #Diff and Merging
 
@@ -226,53 +272,3 @@ Please note uppercase I.
     Press V (That's capital "V" : Shift + v )
     Move your cursor down to the bottom of the block of text/code to remove.
     Press d.
-
-# Git Commands
-
-git config --global user.name "My name is..."
-
-git config --global user.email my_email@domain.com
-
-git config user.name "My name for this project is..." on your local project folder.
-
-git config user.name my_email@domain.com on your local project folder.
-
-For editing
-
-git config --global -e
-
-git config -e (to edit local config)
-
-git config -l
-
-git branch #Shows what branch you are on 
-
-git checkout -b dev_new # Creates a new branch
-
-git remote rename origin new_origin
-
-git remote add upstream url
-
-git log --follow filename # Shows commit only for that specific file
-
-git branch --set-upstream-to origin dev_ankit #Creates tracking between remote dev_ankit branch and local dev_ankit branch
-
-git push -u origin dev_new  #The first time that you push dev_new branch it sets up the association between your branch and the one at origin.
-
-git --no-ff #The --no-ff flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature
-
-git clone git@github.com:ankit-jha/commands.git -b develop --single-branch #Clone a specific branch
-
-# Homebrew Commands
-
-ruby -e "$(curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install)" # Installs HomeBrew
-
-brew cask  # Installs Cask if it's not there otherwise shows all commands
-
-brew cask install app-name
-
-brew cask uninstall app-name
-
-brew cask search app-name
-
-brew cask cleanup
