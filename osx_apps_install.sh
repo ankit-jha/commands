@@ -20,6 +20,7 @@ anaconda
 boom
 caffeine
 calibre
+docker #Docker For Mac
 firefox
 flash-npapi
 google-chrome
