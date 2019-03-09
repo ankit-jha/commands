@@ -26,12 +26,14 @@ flash-npapi
 google-chrome
 google-featured-photos
 handbrake
+#mupdf-tools
 opera
 skype
 skypewebplugin
 spotify
 torbrowser
 #tree
+#tmux
 vagrant
 virtualbox
 vlc
@@ -40,6 +42,7 @@ xmind
 xquartz
 xquartz
 youtube-to-mp3
+#youtube-dl
 zotero
 )
 
