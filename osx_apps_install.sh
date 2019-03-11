@@ -11,6 +11,18 @@ fi
 # Update homebrew recipes
 brew update
 
+echo "Installing packages..."
+PACKAGES=(
+tree
+tmux
+mupdf-tools
+jq
+youtube-dl
+)
+
+echo "Installing packages..."
+brew install ${PACKAGES[@]}
+
 echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
@@ -26,14 +38,11 @@ flash-npapi
 google-chrome
 google-featured-photos
 handbrake
-#mupdf-tools
 opera
 skype
 skypewebplugin
 spotify
 torbrowser
-#tree
-#tmux
 vagrant
 virtualbox
 vlc
@@ -42,7 +51,6 @@ xmind
 xquartz
 xquartz
 youtube-to-mp3
-#youtube-dl
 zotero
 )
 
