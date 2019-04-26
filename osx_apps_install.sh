@@ -49,9 +49,7 @@ vlc
 whatsapp
 xmind
 xquartz
-xquartz
 youtube-to-mp3
-zotero
 )
 
 echo "Installing cask apps..."
