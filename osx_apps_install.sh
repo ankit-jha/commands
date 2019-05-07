@@ -33,6 +33,7 @@ boom
 caffeine
 calibre
 docker #Docker For Mac
+drawio
 firefox
 flash-npapi
 google-chrome
