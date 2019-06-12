@@ -18,6 +18,7 @@ tmux
 mupdf-tools
 jq
 youtube-dl
+shellcheck
 )
 
 echo "Installing packages..."
