@@ -31,18 +31,22 @@ brew install caskroom/cask/brew-cask
 
 CASKS=(
 appcleaner
-anaconda
 boom
 caffeine
 calibre
 docker #Docker For Mac
 drawio
 firefox
-flash-npapi
+garmin-express
 google-chrome
 google-featured-photos
+google-hangouts
 handbrake
+macvim
+meld
 opera
+plex-media-server
+postman
 skype
 skypewebplugin
 spotify
@@ -51,7 +55,6 @@ vagrant
 virtualbox
 vlc
 whatsapp
-xmind
 xquartz
 youtube-to-mp3
 )
