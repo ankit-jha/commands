@@ -13,12 +13,14 @@ brew update
 
 echo "Installing packages..."
 PACKAGES=(
-tree
-tmux
-mupdf-tools
+ffmpeg
+gnutls
 jq
-youtube-dl
+mupdf-tools
 shellcheck
+tmux
+tree
+youtube-dl
 )
 
 echo "Installing packages..."
