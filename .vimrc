@@ -56,3 +56,14 @@ call plug#end()
 let g:gruvbox_termcolors=256
 set background=dark
 colorscheme gruvbox
+
+"Paste whole file from clipboard in normal mode
+nmap <F1> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+"Paste whole file from clipboard in insert mode
+imap <F1> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+"Copy whole file to clipboard
+nmap <F2> :%w !pbcopy<CR><CR>
+"Copy current line to clipboard
+nmap <F3> :.w !pbcopy<CR><CR>
+"vmap <F2> :w !pbcopy<CR><CR>
+"set clipboard=unnamed
