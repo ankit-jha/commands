@@ -15,8 +15,13 @@ echo "Installing packages..."
 PACKAGES=(
 coreutils
 ffmpeg
+go
 jq
+#kubernetes-cli
+#kubernetes-helm
 mupdf-tools
+#r
+reattach-to-user-namespace
 shellcheck
 tmux
 tree
@@ -32,6 +37,7 @@ brew install caskroom/cask/brew-cask
 CASKS=(
 appcleaner
 boom
+#brave-browser  
 caffeine
 calibre
 docker #Docker For Mac
@@ -42,8 +48,10 @@ google-chrome
 google-featured-photos
 google-hangouts
 handbrake
+licecap
 macvim
 meld
+minikube  
 opera
 plex-media-server
 postman
