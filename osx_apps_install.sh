@@ -13,8 +13,8 @@ brew update
 
 echo "Installing packages..."
 PACKAGES=(
+coreutils
 ffmpeg
-gnutls
 jq
 mupdf-tools
 shellcheck
