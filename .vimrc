@@ -37,11 +37,18 @@ au BufNewFile,BufRead *.py
     \| set fileformat=unix
 
 
+au BufNewFile *.py 0put='#!/user/bin/env python3' "Adds shebang template to all new file
+
+
+
+"vim-plug Plugins
 call plug#begin()
 
 "Plug 'altercation/vim-colors-solarized'
 "Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 
