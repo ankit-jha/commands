@@ -2,7 +2,7 @@ set number  "Display line number
 
 set guifont=Ubuntu\ Mono:h17 "Set your font and font-size
 
-":syntax on "Set syntax highlighting on
+syntax on "Set syntax highlighting on
 
 ":colorscheme desert "Set colorscheme
 
@@ -14,7 +14,8 @@ set backspace=indent,eol,start "Ensures normal backspace key usage
 
 "Json formatting via python
 command! FormatJson %!python -m json.tool
-
+command! Jq %!jq '.'  
+command! Minify  %!jq -c '.'  
 "Mapping very magic mode to /
 nnoremap / /\v
 
@@ -36,32 +37,42 @@ au BufNewFile,BufRead *.py
     \| set autoindent
     \| set fileformat=unix
 
+"Set UTF-8 encoding
+set encoding=utf-8
 
 au BufNewFile *.py 0put='#!/user/bin/env python3' "Adds shebang template to all new file
 
+"***********************Plugins***********************
 
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
 
-"vim-plug Plugins
-call plug#begin()
+" Declare the list of plugins.
 
 "Plug 'altercation/vim-colors-solarized'
+"Plug 'vim-airline/vim-airline'
 "Plug 'scrooloose/nerdtree'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'davidhalter/jedi-vim'
 
+" List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
 "Solarized color scheme settings
 "let g:solarized_termcolors=256
 "syntax enable
 "set background=dark
-"colorscheme solarized  
+"colorscheme solarized
 
 "Gruvbox color scheme settings
 let g:gruvbox_termcolors=256
 set background=dark
 colorscheme gruvbox
+
+"***********************Plugins***********************
+
 
 "Paste whole file from clipboard in normal mode
 nmap <F1> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
