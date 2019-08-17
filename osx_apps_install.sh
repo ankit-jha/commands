@@ -22,6 +22,7 @@ jq
 #mupdf-tools
 #xpdf
 poppler
+pandoc
 #r
 reattach-to-user-namespace
 shellcheck
