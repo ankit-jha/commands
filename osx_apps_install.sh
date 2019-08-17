@@ -19,7 +19,9 @@ go
 jq
 #kubernetes-cli
 #kubernetes-helm
-mupdf-tools
+#mupdf-tools
+#xpdf
+poppler
 #r
 reattach-to-user-namespace
 shellcheck
