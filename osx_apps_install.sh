@@ -15,7 +15,8 @@ echo "Installing packages..."
 PACKAGES=(
 coreutils
 ffmpeg
-go
+#go
+grip
 jq
 #kubernetes-cli
 #kubernetes-helm
