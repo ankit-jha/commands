@@ -34,6 +34,7 @@ youtube-dl
 
 echo "Installing packages..."
 brew install ${PACKAGES[@]}
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 echo "Installing cask..."
 brew install caskroom/cask/brew-cask
