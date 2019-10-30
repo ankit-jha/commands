@@ -23,6 +23,7 @@ jq
 #mupdf-tools
 #xpdf
 poppler
+minikube
 pandoc
 #r
 reattach-to-user-namespace
@@ -55,8 +56,7 @@ google-hangouts
 handbrake
 licecap
 macvim
-meld
-minikube  
+meld  
 opera
 plex-media-server
 postman
