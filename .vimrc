@@ -74,6 +74,8 @@ colorscheme gruvbox
 "***********************Plugins***********************
 
 
+"***********************Mappings***********************
+
 "Paste whole file from clipboard in normal mode
 nmap <F1> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 "Paste whole file from clipboard in insert mode
@@ -85,3 +87,8 @@ nmap <F3> :.w !pbcopy<CR><CR>
 "Copy current selection to clipboard
 vmap <F2> :w !pbcopy<CR><CR>
 "set clipboard=unnamed "Enables clipboard sharing.Works only if your vim supports +clipboard
+
+"Search for visually selected text
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+"***********************Mappings***********************
