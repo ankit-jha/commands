@@ -41,6 +41,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+#adoptopenjdk8
 appcleaner
 boom
 #brave-browser  
