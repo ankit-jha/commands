@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting Apps Installation"
+echo "Starting Homebrew Installation"
 
 # Check for Homebrew, install if we don't have it
 if test ! $(which brew); then
@@ -8,25 +8,22 @@ if test ! $(which brew); then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Update homebrew recipes
-brew update
-
-echo "Installing packages..."
+echo "Starting Core Apps Installation"
 PACKAGES=(
 coreutils
 ffmpeg
-#go
+go
 grip
 imagemagick
 jq
-#kubernetes-cli
-#kubernetes-helm
-#mupdf-tools
-#xpdf
+kubernetes-cli
+kubernetes-helm
+mupdf-tools
+xpdf
 poppler
 minikube
 pandoc
-#r
+r
 reattach-to-user-namespace
 shellcheck
 tmux
@@ -34,18 +31,20 @@ tree
 youtube-dl
 )
 
-echo "Installing packages..."
+echo "Installing Core Apps..."
 brew install ${PACKAGES[@]}
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
-echo "Installing cask..."
-brew install caskroom/cask/brew-cask
+echo "Installing ctags..."
+brew tap universal-ctags/universal-ctags
+brew install --HEAD universal-ctags
 
+echo "Starting Cask Apps Installation"
 CASKS=(
-#adoptopenjdk8
+adoptopenjdk8
+amazon-music
 appcleaner
-boom
-#brave-browser  
+boom-3d
+brave-browser  
 caffeine
 calibre
 docker #Docker For Mac
@@ -58,28 +57,46 @@ google-hangouts
 handbrake
 licecap
 macvim
-meld  
+meld
 opera
-plex-media-server
 postman
 skype
+slack
 skypewebplugin
 spotify
-torbrowser
+tor-browser
 vagrant
 virtualbox
 vlc
+webex-meetings
 whatsapp
 xquartz
 youtube-to-mp3
 )
 
-echo "Installing cask apps..."
+echo "Installing Cask Apps..."
+brew tap homebrew/cask
 brew cask install ${CASKS[@]}
 
-echo "Cleaning up..."
-brew cask cleanup
+echo "Installing Fonts..."
+brew tap homebrew/cask-fonts
+brew cask install font-UbuntuMono-nerd-font
 
-echo "Apps installation complete"
-export PS1="\[\e[32;1m\]\u@\[\e[32;1m\]\h: \[\e[34;1m\]\W \[\e[0m\]\$ "
-echo "Prompt Update"
+echo "Apps Installation Complete"
+
+echo "Installing tmux-plugins..."
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+echo "Installing Oh My Zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sed -i '' 's/plugins=(git)/plugins=(git history-substring-search colored-man-pages zsh-autosuggestions zsh-completions zsh-syntax-highlighting)/' ~/.zshrc
+
+echo "Installing vim-plug.."
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+echo "Installing virtualenvwrapper..."
+python3 -m pip install --user virtualenvwrapper
+echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.zshrc
+echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.zshrc
+echo "export PROJECT_HOME=$HOME/Repositories/github" >> ~/.zshrc
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
