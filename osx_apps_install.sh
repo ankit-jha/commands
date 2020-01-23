@@ -17,6 +17,7 @@ coreutils
 ffmpeg
 #go
 grip
+imagemagick
 jq
 #kubernetes-cli
 #kubernetes-helm
