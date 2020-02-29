@@ -50,6 +50,7 @@ calibre
 docker #Docker For Mac
 drawio
 firefox
+flash-npapi
 garmin-express
 google-chrome
 google-featured-photos
