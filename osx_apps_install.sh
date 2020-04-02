@@ -48,6 +48,7 @@ brave-browser
 caffeine
 calibre
 docker #Docker For Mac
+dbeaver-community
 drawio
 firefox
 flash-npapi
@@ -65,6 +66,7 @@ skype
 slack
 skypewebplugin
 spotify
+thinkorswim
 tor-browser
 vagrant
 virtualbox
