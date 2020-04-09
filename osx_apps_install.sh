@@ -85,6 +85,9 @@ echo "Installing Fonts..."
 brew tap homebrew/cask-fonts
 brew cask install font-UbuntuMono-nerd-font
 
+echo "Installing Drivers..."
+brew cask install homebrew/cask-drivers/logitech-unifying
+
 echo "Apps Installation Complete"
 
 echo "Installing tmux-plugins..."
