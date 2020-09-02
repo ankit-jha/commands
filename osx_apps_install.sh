@@ -40,26 +40,34 @@ brew install --HEAD universal-ctags
 
 echo "Starting Cask Apps Installation"
 CASKS=(
-adoptopenjdk8
+adoptopenjdk11
 amazon-music
+android-studio
 appcleaner
 boom-3d
 brave-browser  
 caffeine
 calibre
-docker #Docker For Mac
+chromedriver
+chromium
 dbeaver-community
+docker #Docker For Mac
 drawio
 firefox
 flash-npapi
 garmin-express
+gnucash
 google-chrome
+google-cloud-sdk
 google-featured-photos
 google-hangouts
 handbrake
+ibm-cloud-cli
+lens
 licecap
 macvim
 meld
+microsoft-teams
 opera
 postman
 skype
@@ -70,15 +78,18 @@ thinkorswim
 tor-browser
 vagrant
 virtualbox
+visual-studio-code
 vlc
 webex-meetings
 whatsapp
 xquartz
 youtube-to-mp3
+zoomus
 )
 
 echo "Installing Cask Apps..."
 brew tap homebrew/cask
+brew tap adoptopenjdk/openjdk
 brew cask install ${CASKS[@]}
 
 echo "Installing Fonts..."
