@@ -8,16 +8,11 @@ syntax on "Set syntax highlighting on
 
 set hlsearch "Set highlight search on
 
+set history=1000 "Set command line history
+
 set ruler "Displays column number
 
 set backspace=indent,eol,start "Ensures normal backspace key usage
-
-"Json formatting via python
-command! FormatJson %!python -m json.tool
-command! Jq %!jq '.'  
-command! Minify  %!jq -c '.'  
-"Mapping very magic mode to /
-nnoremap / /\v
 
 set ignorecase "No case matching
 
@@ -27,6 +22,11 @@ set incsearch "Search as you type
 
 set encoding=utf-8 "Set UTF-8 encoding
 
+set splitbelow "Splits open below by default
+
+set wildignore=tags "Ignore tags file while performing search
+
+au BufRead *.ipynb 
 "PEP 8 guidelines
 au BufNewFile,BufRead *.py
     \| set tabstop=4
@@ -37,10 +37,21 @@ au BufNewFile,BufRead *.py
     \| set autoindent
     \| set fileformat=unix
 
-"Set UTF-8 encoding
-set encoding=utf-8
+"Adds shebang template to all new file
+au BufNewFile *.py 0put='#!/user/bin/env python3'
 
-au BufNewFile *.py 0put='#!/user/bin/env python3' "Adds shebang template to all new file
+"Close all buffers except the current one
+command! BufOnly execute '%bdelete|edit #|normal `"'
+
+"Formatting
+"command! FormatJson %!python -m json.tool
+"command! FormatXML   %!python3 -c "import xml.dom.minidom, sys; print(xml.dom.minidom.parse(sys.stdin).toprettyxml())"
+command! FormatXML   %!xmllint --format --recover - 2>/dev/null
+command! FormatJson  %!jq '.'  
+command! Minify      %!jq -c '.'  
+
+"Mapping very magic mode to /
+nnoremap / /\v
 
 "***********************Plugins***********************
 
@@ -53,9 +64,36 @@ call plug#begin('~/.vim/plugged')
 "Plug 'vim-airline/vim-airline'
 "Plug 'scrooloose/nerdtree'
 "Plug 'Valloric/YouCompleteMe'
+
+"Theme
 Plug 'morhetz/gruvbox'
+
+"Git
 Plug 'tpope/vim-fugitive'
-Plug 'davidhalter/jedi-vim'
+Plug 'tpope/vim-rhubarb'
+
+"Python
+"Plug 'davidhalter/jedi-vim'
+
+"Markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
+"Remove hlsearch
+Plug 'romainl/vim-cool'
+
+"FzF search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+"Write
+Plug 'junegunn/goyo.vim'
+
+"Tags
+Plug 'ludovicchabant/vim-gutentags'
+
+"Indentation
+Plug 'Yggdroot/indentLine'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -70,6 +108,15 @@ call plug#end()
 let g:gruvbox_termcolors=256
 set background=dark
 colorscheme gruvbox
+
+"vim-fugitive
+let g:github_enterprise_urls = ['https://github.ibm.com']
+
+"vim-markdown
+let g:vim_markdown_folding_disabled = 1
+
+"vim-gutentags
+"let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
 
 "***********************Plugins***********************
 
