@@ -26,7 +26,6 @@ set splitbelow "Splits open below by default
 
 set wildignore=tags "Ignore tags file while performing search
 
-au BufRead *.ipynb 
 "PEP 8 guidelines
 au BufNewFile,BufRead *.py
     \| set tabstop=4
@@ -60,9 +59,14 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 
+"Personalization
 "Plug 'altercation/vim-colors-solarized'
-"Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
+
+"Navigation
 "Plug 'scrooloose/nerdtree'
+
+"Auto Completion
 "Plug 'Valloric/YouCompleteMe'
 
 "Theme
@@ -71,6 +75,7 @@ Plug 'morhetz/gruvbox'
 "Git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'shumphrey/fugitive-gitlab.vim'
 
 "Python
 "Plug 'davidhalter/jedi-vim'
@@ -78,6 +83,12 @@ Plug 'tpope/vim-rhubarb'
 "Markdown
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+
+"Toml
+Plug 'cespare/vim-toml'
+
+"Tmux
+Plug 'christoomey/vim-tmux-runner'
 
 "Remove hlsearch
 Plug 'romainl/vim-cool'
