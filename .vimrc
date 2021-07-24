@@ -129,6 +129,12 @@ let g:vim_markdown_folding_disabled = 1
 "vim-gutentags
 "let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
 
+"vim-tmux-runner
+let g:vtr_filetype_runner_overrides = {
+      \ 'python': 'python3 {file}'
+      \ }
+
+
 "***********************Plugins***********************
 
 
