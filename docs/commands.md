@@ -1,5 +1,4 @@
 # commands
-
 vi command mode
 
 :set number  #Set Line number
