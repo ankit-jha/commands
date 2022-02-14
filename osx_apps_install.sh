@@ -81,7 +81,6 @@ virtualbox
 visual-studio-code
 vlc
 webex-meetings
-whatsapp
 xquartz
 youtube-to-mp3
 zoomus
@@ -90,14 +89,14 @@ zoomus
 echo "Installing Cask Apps..."
 brew tap homebrew/cask
 brew tap adoptopenjdk/openjdk
-brew cask install ${CASKS[@]}
+brew install --cask ${CASKS[@]}
 
 echo "Installing Fonts..."
 brew tap homebrew/cask-fonts
-brew cask install font-UbuntuMono-nerd-font
+brew install font-ubuntu-mono-nerd-font
 
 echo "Installing Drivers..."
-brew cask install homebrew/cask-drivers/logitech-unifying
+brew install --cask homebrew/cask-drivers/logitech-unifying
 
 echo "Apps Installation Complete"
 
@@ -110,8 +109,7 @@ echo "Installing Oh My Zsh Plugins..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 sed -i '' 's/plugins=(git)/plugins=(git history-substring-search colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
-#TODO Add line to ~/.zshrc
-#source $ZSH/oh-my-zsh.sh
+
 
 echo "Installing vim-plug.."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
