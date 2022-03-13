@@ -82,7 +82,7 @@ vlc
 webex-meetings
 xquartz
 youtube-to-mp3
-zoomus
+zoom
 )
 
 echo "Installing Cask Apps..."
