@@ -41,7 +41,6 @@ brew install --HEAD universal-ctags
 echo "Starting Cask Apps Installation"
 CASKS=(
 adoptopenjdk11
-amazon-music
 android-studio
 appcleaner
 boom-3d
