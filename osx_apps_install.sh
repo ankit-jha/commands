@@ -69,6 +69,7 @@ meld
 microsoft-teams
 opera
 postman
+rectangle
 skype
 slack
 skypewebplugin
